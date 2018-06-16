@@ -128,34 +128,34 @@ map[e.keyCode]=false;
 }
 
 function update(){
-if(map[57]&&x>0){
-  if(y%60==0){
-    if(x%60==0) {if(block[y/60+1][x/60]==0) x-=1;}
-    else if((block[y/40+1][Math.floor(x/60)+1]==0)) x-=1;
+if(map[37]&&x>0){
+  if(y%40==0){
+    if(x%40==0) {if(block[y/40+1][x/40]==0) x-=1;}
+    else if((block[y/40+1][Math.floor(x/40)+1]==0)) x-=1;
 	}
   else{
-    if(x%60==0){if((block[Math.floor(y/60)+1][x/60]==0)&&(block[Math.floor(y/60)+2][x/60]==0)) x-=1;}
-    else if((block[Math.floor(y/60)+1][Math.floor(x/60)+1]==0)&&(block[Math.floor(y/60)+2][Math.floor(x/60)+1]==0)) x-=1;
+    if(x%40==0){if((block[Math.floor(y/40)+1][x/40]==0)&&(block[Math.floor(y/40)+2][x/40]==0)) x-=1;}
+    else if((block[Math.floor(y/40)+1][Math.floor(x/40)+1]==0)&&(block[Math.floor(y/40)+2][Math.floor(x/40)+1]==0)) x-=1;
     }
 }<!--좌-->
-else if(map[59]&&x<mw-60){
-  if((y%40==0)&&(block[y/60+1][Math.floor(x/60)+2]==0)) x+=1;
-  else if((block[Math.floor(y/60)+1][Math.floor(x/60)+2]==0)&&(block[Math.floor(y/60)+2][Math.floor(x/60)+2]==0)) x+=1;
+else if(map[39]&&x<mw-40){
+  if((y%40==0)&&(block[y/40+1][Math.floor(x/40)+2]==0)) x+=1;
+  else if((block[Math.floor(y/40)+1][Math.floor(x/40)+2]==0)&&(block[Math.floor(y/40)+2][Math.floor(x/40)+2]==0)) x+=1;
   }
   <!--우-->
-if(map[58]&&y>0){
-  if(y%60==0){
-  if((x%60==0)&&(block[y/60][x/60+1]==0)) y-=1;
-  else if((block[y/60][Math.floor(x/60)+1]==0)&&(block[y/60][Math.floor(x/60)+2]==0)) y-=1;
+if(map[38]&&y>0){
+  if(y%40==0){
+  if((x%40==0)&&(block[y/40][x/40+1]==0)) y-=1;
+  else if((block[y/40][Math.floor(x/40)+1]==0)&&(block[y/40][Math.floor(x/40)+2]==0)) y-=1;
 	}
   else{
-  if((x%60==0)&&(block[Math.floor(y/60)+1][x/60+1]==0)) y-=1;
-  else if((block[Math.floor(y/60)+1][Math.floor(x/60)+1]==0)&&(block[Math.floor(y/60)+1][Math.floor(x/60)+2]==0)) y-=1;
+  if((x%40==0)&&(block[Math.floor(y/40)+1][x/40+1]==0)) y-=1;
+  else if((block[Math.floor(y/40)+1][Math.floor(x/40)+1]==0)&&(block[Math.floor(y/40)+1][Math.floor(x/40)+2]==0)) y-=1;
   }
 }<!--상-->
-else if(map[60]&&y<mh-60){
-  if((x%60==0)&&(block[Math.floor(y/60)+2][x/60+1]==0)) y+=1;
-  else if((block[Math.floor(y/60)+2][Math.floor(x/60)+1]==0)&&(block[Math.floor(y/60)+2][Math.floor(x/60)+2]==0)) y+=1;
+else if(map[40]&&y<mh-40){
+  if((x%40==0)&&(block[Math.floor(y/40)+2][x/40+1]==0)) y+=1;
+  else if((block[Math.floor(y/40)+2][Math.floor(x/40)+1]==0)&&(block[Math.floor(y/40)+2][Math.floor(x/40)+2]==0)) y+=1;
   }
   <!--하-->
 
@@ -168,8 +168,8 @@ else if(y>380&&y<=mh-420){ backgroundy=-y+380; chary=380; }
 else if(y>mh-420){ backgroundy=-mh+800; chary=y-mh+800; }
 
 ctx.drawImage(background1,backgroundx,backgroundy,mw,mh);
-ctx.drawImage(tong,backgroundx+80,backgroundy+80,40,40);
-ctx.drawImage(char1,charx,chary,60,60);
+ctx.drawImage(tong,backgroundx+80,backgroundy+80,30,30);
+ctx.drawImage(char1,charx,chary,50,50);
 ctx.font="50px Comic Sans MS";
 ctx.fillStyle = "red";
 ctx.fillText("x="+x+" y="+y,10,50);

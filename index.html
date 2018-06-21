@@ -79,7 +79,7 @@
 </center>
 <script>
 var username=prompt("당신의 이름을 입력해주세요");
-	var can=document.getElementById("can");
+var can=document.getElementById("can");
 var ctx=can.getContext("2d");
 var map={};
 var x,y;
@@ -164,10 +164,164 @@ function makechar(source){
 }
 
 var obstacleMap = new Array(
-  new makeObstacle("fadf",3,4,1,1,"https://diotheworld.github.io/image/tong.png"), 
-  new makeObstacle("fadf",3,5,1,1,"https://diotheworld.github.io/image/tong.png"), 
-  new makeObstacle("ffffff",3,6,1,1,"https://diotheworld.github.io/image/tong.png"),
-  new makeObstacle("ffffff",3,8,2,2,"https://diotheworld.github.io/image/tong.png")
+	new makeObstacle("세로철조망",1,1,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,2,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,3,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,4,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,5,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,6,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,7,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,8,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,9,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,10,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,11,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,12,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,13,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,14,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,15,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,16,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,17,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,18,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,19,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,20,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,21,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,22,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,23,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,24,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,25,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,26,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,27,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,28,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,29,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,30,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,31,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,32,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,33,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,34,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,35,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,36,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,37,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,38,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,39,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,40,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,41,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,42,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,43,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,44,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,45,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,46,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,47,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,48,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,49,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",1,50,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	
+	new makeObstacle("세로철조망",100,1,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,2,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,3,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,4,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,5,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,6,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,7,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,8,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,9,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,10,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,11,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,12,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,13,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,14,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,15,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,16,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,17,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,18,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,19,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,20,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,21,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,22,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,23,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,24,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,25,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,26,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,27,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,28,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,29,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,30,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,31,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,32,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,33,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,34,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,35,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,36,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,37,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,38,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,39,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,40,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,41,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,42,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,43,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,44,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,45,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,46,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,47,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,48,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,49,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	new makeObstacle("세로철조망",100,50,1,1,"https://diotheworld.github.io/image/Obstacle/heightFence.png"),
+	
+	new makeObstacle("세로철조망",2,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",3,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",4,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",5,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",6,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",7,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",8,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",9,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",10,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",11,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",12,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",13,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",14,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",15,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",16,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",17,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",18,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",19,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",20,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",21,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",22,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",23,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",24,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",25,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",26,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",27,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",28,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",29,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",30,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",31,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",32,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",33,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",34,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",35,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",36,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",37,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",38,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",39,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",40,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",41,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",42,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",43,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",44,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",45,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",46,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",47,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",48,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",49,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",50,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	new makeObstacle("세로철조망",51,1,1,1,"https://diotheworld.github.io/image/Obstacle/widthFence.png"),
+	
+	new makeObstacle("통",3,4,1,1,"https://diotheworld.github.io/image/tong.png"),
+	new makeObstacle("통",10,15,1,1,"https://diotheworld.github.io/image/tong.png"), 
+	new makeObstacle("통",30,26,1,1,"https://diotheworld.github.io/image/tong.png"),
+	new makeObstacle("큰통",3,8,2,2,"https://diotheworld.github.io/image/tong.png"),
+	new makeObstacle("시설1",8,8,9,3,"https://diotheworld.github.io/image/시설1.png")
 );
 function makeObstacle2(name,x,y,source){
 	this.name=name;
@@ -195,11 +349,11 @@ for(a=0;a<b;a++)
 ctx.drawImage(obstacleMap[a].image,backgroundx+(obstacleMap[a].x-1)*40,backgroundy+(obstacleMap[a].y-1)*40,obstacleMap[a].sizex*40,obstacleMap[a].sizey*40);
 }
 
-var npcMap = new Array(
-  new makeNpc("김 상병",4,4,"http://shop1.phinf.naver.net/20170227_213/bookch_1488183117948QY2EU_JPEG/9791131951293.jpg"), 
-  new makeNpc("이 일병",4,5,"https://diotheworld.github.io/image/a.jpg"), 
-  new makeNpc("최 병장",4,6,"http://shop1.phinf.naver.net/20170227_213/bookch_1488183117948QY2EU_JPEG/9791131951293.jpg"),
-  new makeNpc("금 일병",4,7,"http://shop1.phinf.naver.net/20170227_213/bookch_1488183117948QY2EU_JPEG/9791131951293.jpg")
+var npcMap = new Array(<!--x는 최대 100, y는 최대 50
+  new makeNpc("김 상병",4,4,"https://diotheworld.github.io/image/Npc/김상병.png"), 
+  new makeNpc("이 일병",17,5,"https://diotheworld.github.io/image/a.jpg"), 
+  new makeNpc("최 병장",40,45,"http://shop1.phinf.naver.net/20170227_213/bookch_1488183117948QY2EU_JPEG/9791131951293.jpg"),
+  new makeNpc("금 일병",100,22,"http://shop1.phinf.naver.net/20170227_213/bookch_1488183117948QY2EU_JPEG/9791131951293.jpg")
 );
 function makeNpc(name,x,y,source){
 	this.name=name;
@@ -349,11 +503,10 @@ if(map[32]){
 </script>
 <center>
 <br><br>	
-<button onclick="alert('F11을 눌러서 전체화면으로 플레이해 보세요~(끌때도 F11)');">도움말</button>
+<button onclick="alert('F11을 눌러서 전체화면으로 플레이해 보세요~(끌때도 F11) \n 방향키: 주인공 움직이기 \n 스페이스바: npc에게 말걸기');">도움말</button>
 </center>
 </body>
 </html>
-
 	
 
 </body>
